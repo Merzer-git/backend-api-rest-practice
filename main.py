@@ -1,6 +1,5 @@
 #API REST: interfaz de progracion de aplicaciones para compartir recursos (buscar info mas precisa)
 
-from tkinter import N
 from typing import Optional
 import uuid
 from fastapi import FastAPI, HTTPException
