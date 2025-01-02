@@ -1,5 +1,5 @@
 #API REST: interfaz de progracion de aplicaciones para compartir recursos (buscar info mas precisa)
-from ast import List
+
 from typing import Optional
 import uuid
 from fastapi import FastAPI, HTTPException
@@ -21,7 +21,7 @@ cursos_db = []
 
 #CRUD: READ (lectura) GET ALL: leeremos todos los cursos que hay en la base de datos
 
-@app.get("/cursos/", response_model=List[Curso])
+@app.get("/cursos/", response_model=list[Curso])
 def obtener_curso():
     return cursos_db
 
